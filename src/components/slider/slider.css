@@ -1,0 +1,11 @@
+.slider{
+   max-height: 80vh;
+}
+
+.slider__img{
+    height: 100%;
+}
+
+.slider__img img{
+    object-fit: contain;
+}

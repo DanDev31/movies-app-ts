@@ -1,0 +1,33 @@
+.home_container{
+    background-color: var(--black);
+    color: var(--white);
+    opacity: .9;
+    height: 100vh;
+}
+
+.categories__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+}
+.home__title{
+    margin: 3rem 0;
+}
+
+.categories__card{
+    border-radius: .5rem;
+    height: 30rem;
+    position: relative;
+    transition: .2s all ease-in-out;
+}
+
+.categories__card:hover{
+    transform: scale(1.05);
+}
+
+.categories__card h3{
+    color: var(--white);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
