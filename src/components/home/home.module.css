@@ -1,9 +1,3 @@
-.home_container{
-    background-color: var(--black);
-    color: var(--white);
-    opacity: .9;
-    height: 100vh;
-}
 
 .categories__container{
     display: grid;
