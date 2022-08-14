@@ -9,7 +9,7 @@ export const Home:React.FC = () => {
 
   return (
     <div className="container__styles">
-      <div className='fluid__container'>
+      <div className="fluid__container">
           {/* <Slider /> */}
           <h2 className={styles.home__title}>Explore categories</h2>
           <div className={styles.categories__container}>

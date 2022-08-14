@@ -36,7 +36,8 @@
 }
 
 .landing__btn {
-    background-color: var(--buttonColor);
+    background: var(--buttonColor);
+    border-radius: .3rem;
     color: var(--white);
     font-size: 1.8rem;
     padding: 1rem .5rem;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import movies from '../../data/data.json'
-import { ContentDetails } from '../contentDetails/ContentDetails'
+import { ContentCard } from '../contentCard/ContentCard'
 import styles from './contentCategory.module.css'
 
 export const ContentCategory:React.FC = () => {
@@ -16,10 +16,12 @@ export const ContentCategory:React.FC = () => {
         <div className={styles.movies__container}>
           {
             movies.filter(element => element.category === category).map((movie, i) => (
-              <ContentDetails
+              <ContentCard
                 key={i} 
+                id={movie.id}
                 img={movie.img}
                 title={movie.title}
+                category={movie.category}
               />
             ))
           }

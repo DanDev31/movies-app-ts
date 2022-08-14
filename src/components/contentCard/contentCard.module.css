@@ -1,0 +1,17 @@
+.card__img__container{
+    border-radius: 1rem;
+    width: 40rem;
+    height: 50rem;
+    transition: .2s all ease-in-out;
+    overflow: hidden;
+}
+
+.card__detail h4{
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.card__img__container:hover{
+    background-color: var(--black);
+    opacity: .7;
+}
