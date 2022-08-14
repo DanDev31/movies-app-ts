@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import moviesReducer from "../redux/moviesReducer";
+import moviesReducer from "../redux/moviesReducer";
 import userReducer from "../redux/userReducer";
 
 import {
@@ -25,7 +25,7 @@ import storage from 'redux-persist/lib/storage'
 export const store = configureStore({
     reducer:{
         user:persistedReducer,
-        // movies: moviesReducer
+        movies: moviesReducer
     },
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

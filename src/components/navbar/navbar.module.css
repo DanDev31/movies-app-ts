@@ -54,3 +54,6 @@
     background-color: transparent;
     padding: 1rem .8rem;
 }
+.logout{
+    cursor: pointer;
+}

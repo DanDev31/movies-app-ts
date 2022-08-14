@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import { RiMovie2Fill } from 'react-icons/ri'
 import { CgScreen } from 'react-icons/cg'
@@ -10,11 +10,21 @@ import { Modal } from '../modal/Modal'
 import { Login } from '../login/Login'
 import { ModalHandler } from '../../helpers/modalHandler'
 import { Register } from '../login/Register'
+import { useAppDispatch, useAppSelector } from '../../redux/redux-hooks/hooks'
+import { logout } from '../../redux/userReducer'
 
 export const Navbar:React.FC = () => {
 
     const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
     const [ switchForm, setSwitchForm ] = useState<boolean>(false)
+    const { isLogged } = useAppSelector(state => state.user)
+    const dispatch = useAppDispatch()
+    const navigate = useNavigate()
+
+    const logoutUser = ():void => {
+        navigate("/")
+        dispatch(logout())
+    }
 
   return (
     <nav className={styles.navbar}>
@@ -22,7 +32,10 @@ export const Navbar:React.FC = () => {
             <img src={logo} alt="logo"/>
         </div>
 
-        <div className={styles.navigation}>
+        {
+            isLogged &&
+
+            <div className={styles.navigation}>
             <div className={styles.navigation__links}>
                 <Link to="/" className="link">
                     <div className={styles.navigation__item}>
@@ -47,8 +60,14 @@ export const Navbar:React.FC = () => {
                 <FaSearch className={styles.search__icon}/>
             </div>
         </div>
+        }
 
-        <button className={styles.login__button} onClick={() => setIsModalOpen(true)}>LOGIN</button> 
+        {
+            isLogged ?
+            (<p className={styles.logout} onClick={() => logoutUser()}>LOGOUT</p>)
+            :
+            (<button className={styles.login__button} onClick={() => setIsModalOpen(true)}>LOGIN</button>)
+        } 
         <Modal 
             isOpen={isModalOpen}
             handleClose={toggleModal}
