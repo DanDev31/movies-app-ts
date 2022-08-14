@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import { RiMovie2Fill } from 'react-icons/ri'
@@ -6,8 +6,14 @@ import { CgScreen } from 'react-icons/cg'
 import { FaSearch } from 'react-icons/fa'
 import styles from './navbar.module.css'
 import logo from '../../assests/logo.png'
+import { Modal } from '../modal/Modal'
+import { Login } from '../login/Login'
+import { ModalHandler } from '../../helpers/modalHandler'
 
 export const Navbar:React.FC = () => {
+
+    const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
+
   return (
     <nav className={styles.navbar}>
         <div className={styles.logo}>
@@ -40,7 +46,13 @@ export const Navbar:React.FC = () => {
             </div>
         </div>
 
-        <button className={styles.login__button}>LOGIN</button>
+        <button className={styles.login__button} onClick={() => setIsModalOpen(true)}>LOGIN</button>
+        <Modal 
+            isOpen={isModalOpen}
+            handleClose={toggleModal}
+        >
+            <Login />
+        </Modal>
     </nav>
   )
 }

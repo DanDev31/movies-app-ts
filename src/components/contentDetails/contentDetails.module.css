@@ -6,7 +6,7 @@
 
 .movie__text{
     text-align: justify;
-    letter-spacing: .5px;
+    letter-spacing: .3px;
     line-height: 1.8;
     flex: 3;
 }
@@ -58,5 +58,9 @@
 @media (max-width:800px){
     .movie__detail{
         flex-direction: column;
+        gap: 5rem;
+    }
+    .trailer__button{
+        width: 100%;
     }
 }
