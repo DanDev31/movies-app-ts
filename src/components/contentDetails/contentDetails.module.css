@@ -46,11 +46,13 @@
     flex: 3;
 }
 
-/* .movie__video{
-    flex: 2;
-} */
+.movie__video{
+   
+   width: 100%;
+}
 
 .video_container{
+    /* max-width: 60rem; */
     width: 100%;
     height: 40rem;
 }

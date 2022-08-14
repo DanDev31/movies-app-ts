@@ -9,10 +9,12 @@ import logo from '../../assests/logo.png'
 import { Modal } from '../modal/Modal'
 import { Login } from '../login/Login'
 import { ModalHandler } from '../../helpers/modalHandler'
+import { Register } from '../login/Register'
 
 export const Navbar:React.FC = () => {
 
     const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
+    const [ switchForm, setSwitchForm ] = useState<boolean>(false)
 
   return (
     <nav className={styles.navbar}>
@@ -46,12 +48,17 @@ export const Navbar:React.FC = () => {
             </div>
         </div>
 
-        <button className={styles.login__button} onClick={() => setIsModalOpen(true)}>LOGIN</button>
+        <button className={styles.login__button} onClick={() => setIsModalOpen(true)}>LOGIN</button> 
         <Modal 
             isOpen={isModalOpen}
             handleClose={toggleModal}
         >
-            <Login />
+            {
+                switchForm ? 
+                <Register setIsModalOpen={setIsModalOpen} switchForm={switchForm} setSwitchForm={setSwitchForm}/>
+                :
+                <Login setIsModalOpen={setIsModalOpen} switchForm={switchForm} setSwitchForm={setSwitchForm}/>
+            }
         </Modal>
     </nav>
   )
