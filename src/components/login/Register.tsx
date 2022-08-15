@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 import { auth } from '../../firebase/firebase';
 import { useNavigate } from 'react-router-dom';
 import { allowAccess, handleModal } from '../../redux/userReducer';
-
+import styles from './authForm.module.css'
 
 
 type Props = {
@@ -78,54 +78,45 @@ export const Register = ({switchForm, setSwitchForm}:Props) => {
  
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-            <legend style={{
-                    fontSize:"2rem",
-                    fontWeight:"bold",
-                    marginBottom:"3rem",
-                    textAlign:"center"
-                    }}>Registration Form</legend>
-                    {
-                        registerError && <p style={{color:"red", fontSize:"1.4rem"}}>Email already in use</p>
-                    }
-                <div className='form_input'>
-                    <label htmlFor="">Name:</label>
-                    <input type="text" name="name" value={name} onChange={handleInputChange}/>
-                </div>
-                <div className='form_input'>
-                    <label htmlFor="">Last Name:</label>
-                    <input type="text" name="lastName" value={lastName} onChange={handleInputChange}/>
-                </div>
-                <div className='form_input'> 
-                    <label htmlFor="">Email:</label>
-                    <input type="email" name="email" value={email} onChange={handleInputChange}/>
-                    {
-                        !emailError && <small style={{color:"red", fontSize:"1.4rem"}}>Enter a valid email</small>
-                    }
-                </div>
-                <div className='form_input'>
-                    <label htmlFor="">Password:</label>
-                    <input type="password" name="password" value={password} onChange={handleInputChange}/>{
-                        !passwordError && 
-                        (<ul style={{color:"red", fontSize:"1.4rem"}}>
-                            <li>Must have at least 8 characters</li>
-                            <li>It must includes at least 1 uppercase letter</li>
-                            <li>It must includes at least 1 lowercase letter</li>
-                            <li>It must includes at least 1 number letter</li>
-                            <li>It must includes at least 1 special character (@$!%*?&#/=._) letter</li>
-                        </ul>)
-                    }  
-                </div>
-                <button type='submit'>Submit</button>
-
-                <p style={{textAlign:"center"}}>or</p>
-              
-                <div>
-                    <p style={{textDecoration:"underline"}} onClick={() => switchFormComponent()}>Have an account already?</p>
-                </div>
+        <form onSubmit={handleSubmit} className={styles.form}>
+            <legend>Register</legend>
+                {
+                    registerError && <p className={styles.form__validation__text}>Email already in use</p>
+                }
+            <div className={styles.form__input}>
+                <label htmlFor="username">Name:</label>
+                <input id="username" type="text" name="name" value={name} onChange={handleInputChange} required/>
+            </div>
+            <div className={styles.form__input}>
+                <label htmlFor="">Last Name:</label>
+                <input type="text" name="lastName" value={lastName} onChange={handleInputChange} required/>
+            </div>
+            <div className={styles.form__input}> 
+                <label htmlFor="">Email:</label>
+                <input type="email" name="email" value={email} onChange={handleInputChange}/>
+                {
+                    !emailError && <small style={{color:"red", fontSize:"1.4rem"}}>Enter a valid email</small>
+                }
+            </div>
+            <div className={styles.form__input}>
+                <label>Password:</label>
+                <input type="password" name="password" value={password} onChange={handleInputChange}/>{
+                    !passwordError && 
+                    (<ul className={styles.form__validation__text}>
+                        <li>Must have at least 8 characters</li>
+                        <li>It must includes at least 1 uppercase letter</li>
+                        <li>It must includes at least 1 lowercase letter</li>
+                        <li>It must includes at least 1 number letter</li>
+                        <li>It must includes at least 1 special character (@$!%*?&#/=._) letter</li>
+                    </ul>)
+                }  
+            </div>
+            <button type='submit' className={styles.form__button}>Submit</button>
+            
+            <div>
+                <p style={{textDecoration:"underline", textAlign:"center", cursor:"pointer"}} onClick={() => switchFormComponent()}>Have an account already?</p>
+            </div>
         </form>
-    </div>
   )
 }
 

@@ -47,13 +47,11 @@
 }
 
 .movie__video{
-   
-   width: 100%;
+   /* min-width: 28rem; */
 }
 
 .video_container{
-    /* max-width: 60rem; */
-    width: 100%;
+    min-width: 40rem;
     height: 40rem;
 }
 

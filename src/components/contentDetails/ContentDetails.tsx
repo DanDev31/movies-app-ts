@@ -1,6 +1,5 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { ModalHandler } from '../../helpers/modalHandler'
 import { useAppDispatch, useAppSelector } from '../../redux/redux-hooks/hooks'
 import { handleModal } from '../../redux/userReducer'
 import { Modal } from '../modal/Modal'

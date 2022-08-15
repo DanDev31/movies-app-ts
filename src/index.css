@@ -26,6 +26,9 @@ img{
 p{
   font-size: 1.6rem;
 }
+input{
+  font-family: 'Montserrat', sans-serif;
+}
 h2{
   font-size: 5rem;
 }

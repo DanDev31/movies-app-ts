@@ -4,6 +4,7 @@ import { auth } from '../../firebase/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../redux/redux-hooks/hooks';
 import { allowAccess, handleModal } from '../../redux/userReducer';
+import styles from './authForm.module.css'
 
 type Props = {
   switchForm:boolean;
@@ -55,33 +56,22 @@ export const Login = ({switchForm, setSwitchForm}:Props) => {
 
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-        <legend style={{
-                    fontSize:"2rem",
-                    fontWeight:"bold",
-                    marginBottom:"3rem",
-                    textAlign:"center"
-                    }}>Login</legend>
-                {
-                    loginError && <small style={{color:"red", fontSize:"1.4rem"}}>Invalid email or password</small>
-                }
-                <div className='form_input'>
-                    <label htmlFor="">Email:</label>
-                    <input type="email" name="email" value={email} onChange={handleInputChange}/>
-                </div>
-                <div className='form_input'>
-                    <label htmlFor="">Password:</label>
-                    <input type="password" name="password" value={password} onChange={handleInputChange}/>
-                </div>
-                <button type='submit'>Submit</button>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <legend>Login</legend>
+            {
+                loginError && <small style={{color:"red", fontSize:"1.4rem"}}>Invalid email or password</small>
+            }
+            <div className={styles.form__input}>
+                <label htmlFor="">Email:</label>
+                <input type="email" name="email" value={email} onChange={handleInputChange}/>
+            </div>
+            <div className={styles.form__input}>
+                <label htmlFor="">Password:</label>
+                <input type="password" name="password" value={password} onChange={handleInputChange}/>
+            </div>
+            <button type='submit' className={styles.form__button}>Submit</button>
 
-                <span>or</span>
-                <hr />
-
-                <p style={{textDecoration:"underline"}} onClick={() => switchFormComponent()}>Create an account</p>
-            <button>Send</button>
+            <p style={{textDecoration:"underline", textAlign:"center", cursor:"pointer"}} onClick={() => switchFormComponent()}>Create an account</p>
         </form>
-    </div>
   )
 }
