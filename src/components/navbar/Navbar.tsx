@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import { RiMovie2Fill } from 'react-icons/ri'
 import { CgScreen } from 'react-icons/cg'
-import styles from './navbar.module.css'
+import { BiFilm } from 'react-icons/bi'
 import logo from '../../assests/logo.png'
 import { Modal } from '../modal/Modal'
 import { Login } from '../login/Login'
@@ -11,6 +11,8 @@ import { Register } from '../login/Register'
 import { useAppDispatch, useAppSelector } from '../../redux/redux-hooks/hooks'
 import { handleModal, logout } from '../../redux/userReducer'
 import { setType } from '../../redux/moviesReducer'
+
+import styles from './navbar.module.css'
 
 export const Navbar:React.FC = () => {
 
@@ -32,6 +34,9 @@ export const Navbar:React.FC = () => {
            
         }
         if(value === "Series"){
+            dispatch(setType(value))
+        }
+        if(value === "Documentaries"){
             dispatch(setType(value))
         }
     }
@@ -65,6 +70,12 @@ export const Navbar:React.FC = () => {
                             <p>Series</p>
                         </div>
                     </Link>  
+                    <Link to="/home/films" className="link">
+                        <div className={styles.navigation__item} onClick={(e) => setLocalStorageValue(e)}>
+                            <BiFilm className={styles.navigation__icon}/>
+                            <p>Documentaries</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         }

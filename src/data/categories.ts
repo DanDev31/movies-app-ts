@@ -8,5 +8,6 @@ export const categories:categoryObject[] = [
     {category:"comedy", color:"linear-gradient(to right, #00c9ff, #92fe9d)"},
     {category:"drama", color:"linear-gradient(to right, #f953c6, #b91d73)"},
     {category:"sci-fi", color:"linear-gradient(to right, #8e2de2, #4a00e0)"},
-    {category:"animation", color:"linear-gradient(to right, #fc4a1a, #f7b733)"} 
+    {category:"animation", color:"linear-gradient(to right, #fc4a1a, #f7b733)"},
+    {category:"documentary", color:"linear-gradient(to right, #1f1c2c, #928dab)"} 
 ]

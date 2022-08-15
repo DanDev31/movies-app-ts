@@ -22,7 +22,7 @@
     },
     {
         "id":3,
-        "img":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/21CE7EA0C1F3DB227B60C83F57CCF2699860BB3F346B1B53C859E07FD5829BA9/scale?width=1200&aspectRatio=1.78&format=jpeg",
+        "img":"https://prensadigitalup.files.wordpress.com/2013/06/monsters-inc.jpg",
         "trailer":"https://www.youtube.com/embed/CGbgaHoapFM",
         "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
         "title":"Monsters Inc",
@@ -53,7 +53,7 @@
     {
 
         "id":6,
-        "img":"https://imagenes.atresplayer.com/atp/clipping/cmsimages01/2021/09/30/D4E89173-B12C-4CAD-B81F-9984EF64CCAE//480x270.jpg",
+        "img":"https://cdn.chili.com/images/public/cms/14/d7/15/fa/14d715fa-b9ca-4da0-860a-57169f54ea80.jpg?width=422",
         "trailer":"https://www.youtube.com/embed/WBb3fojgW0Q",
         "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
         "title":"The Big Bang Theory",
@@ -90,5 +90,96 @@
         "category":"animation",
         "year":"2003",
         "type":"Movies"
+    },
+    {
+        "id":10,
+        "img":"https://pbs.twimg.com/media/Ea5ZdlpWoAA4JAg.jpg",
+        "trailer":"https://www.youtube.com/embed/rrwycJ08PSA",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Dark",
+        "category":"sci-fi",
+        "year":"2017",
+        "type":"Series"
+    },
+    {
+        "id":11,
+        "img":"https://celebrity.land/wp-content/uploads/2021/04/Seaspiracy-los-fanaticos-dicen-lo-mismo-sobre-el-documental-de-428x536.jpg",
+        "trailer":"https://www.youtube.com/embed/1Q5CXN7soQg",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Seaspiracy",
+        "category":"documentary",
+        "year":"2021",
+        "type":"Documentaries"
+    },
+    {
+        "id":12,
+        "img":"https://www.el-parnasillo.com/juegotronos/juego-tronos-poster.jpg",
+        "trailer":"https://www.youtube.com/embed/KPLWWIOCOOQ",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Game of Thrones",
+        "category":"drama",
+        "year":"2011",
+        "type":"Series"
+    },
+    {
+        "id":13,
+        "img":"https://www.ecartelera.com/carteles/17000/17037/003.jpg",
+        "trailer":"https://www.youtube.com/embed/Ov9fUhwEnGc",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Flee",
+        "category":"documentary",
+        "year":"2021",
+        "type":"Documentaries"
+    },
+    {
+        "id":14,
+        "img":"https://es.web.img3.acsta.net/pictures/21/07/13/09/05/3843496.jpg",
+        "trailer":"https://www.youtube.com/embed/LMl93KgG72Y",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Shiny_Flakes",
+        "category":"documentary",
+        "year":"2021",
+        "type":"Documentaries"
+    },
+    {
+        "id":15,
+        "img":"https://www.santandercreativa.com/uploads/event/main_image/522/uncharted-417211360-large.jpeg",
+        "trailer":"https://www.youtube.com/embed/eHp3MbsCbMg",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Uncharted",
+        "category":"action",
+        "year":"2022",
+        "type":"Movies"
+    },
+    {
+        "id":16,
+        "img":"https://filmitch.files.wordpress.com/2013/08/1366446482_projet-x.jpg",
+        "trailer":"https://www.youtube.com/embed/fMJ4IBnU0Ks",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Project X",
+        "category":"comedy",
+        "year":"2012",
+        "type":"Movies"
+    },
+    {
+        "id":17,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/A1UTpJzoPBL._RI_.jpg",
+        "trailer":"https://www.youtube.com/embed/isOGD_7hNIY",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Parasite",
+        "category":"drama",
+        "year":"2020",
+        "type":"Movies"
+    },
+    {
+        "id":18,
+        "img":"https://play-lh.googleusercontent.com/OQtM0VNBgxTubLLMvo1tXPfjJ6VljX9amdUXtViwL99o4lCt_2vRd5X4YSaF0SXfXFpD7Fb0Skztd3yTlvc9",
+        "trailer":"https://www.youtube.com/embed/NgsQ8mVkN8w",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Ratatouille",
+        "category":"animation",
+        "year":"2007",
+        "type":"Movies"
     }
+
 ]
