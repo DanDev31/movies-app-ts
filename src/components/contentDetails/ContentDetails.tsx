@@ -19,8 +19,8 @@ type Movie= {
 export const ContentDetails = () => {
 
 const {id} = useParams()
-const { movies } = useAppSelector(state => state.movies)
-const { isModalOpen } = useAppSelector(state => state.user)
+const { movies } = useAppSelector(state => state.reducer.movies)
+const { isModalOpen } = useAppSelector(state => state.reducer.users)
 const movie: Movie | undefined = movies.find(item => item.id === Number(id))
 const dispatch = useAppDispatch()
 

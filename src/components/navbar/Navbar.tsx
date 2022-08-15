@@ -10,18 +10,30 @@ import { Login } from '../login/Login'
 import { Register } from '../login/Register'
 import { useAppDispatch, useAppSelector } from '../../redux/redux-hooks/hooks'
 import { handleModal, logout } from '../../redux/userReducer'
+import { setType } from '../../redux/moviesReducer'
 
 export const Navbar:React.FC = () => {
 
-    // const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
+
     const [ switchForm, setSwitchForm ] = useState<boolean>(false)
-    const { isLogged, isModalOpen } = useAppSelector(state => state.user)
+    const { isLogged, isModalOpen } = useAppSelector(state => state.reducer.users)
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
 
     const logoutUser = ():void => {
         navigate("/")
         dispatch(logout())
+    }
+
+    const setLocalStorageValue = (e:any) => {
+        let value = e.target.innerText
+        if(value === "Movies"){
+            dispatch(setType(value))
+           
+        }
+        if(value === "Series"){
+            dispatch(setType(value))
+        }
     }
 
   return (
@@ -35,20 +47,20 @@ export const Navbar:React.FC = () => {
 
             <div className={styles.navigation}>
                 <div className={styles.navigation__links}>
-                    <Link to="/" className="link">
+                    <Link to="/home" className="link">
                         <div className={styles.navigation__item}>
                             <AiFillHome className={styles.navigation__icon}/>
                             <p>Home</p>
                         </div>
                     </Link> 
-                    <Link to="/" className="link">
-                        <div className={styles.navigation__item}>
+                    <Link to="/home/films" className="link">
+                        <div className={styles.navigation__item} onClick={(e) => setLocalStorageValue(e)}>
                             <RiMovie2Fill className={styles.navigation__icon}/>
                             <p>Movies</p>
                         </div>
                     </Link>
-                    <Link to="/" className="link">
-                        <div className={styles.navigation__item}>
+                    <Link to="/home/films" className="link">
+                        <div className={styles.navigation__item}  onClick={(e) => setLocalStorageValue(e)}>
                             <CgScreen className={styles.navigation__icon}/>
                             <p>Series</p>
                         </div>

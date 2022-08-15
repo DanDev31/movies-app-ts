@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import moviesReducer from "../redux/moviesReducer";
 import userReducer from "../redux/userReducer";
 
@@ -19,13 +19,17 @@ import storage from 'redux-persist/lib/storage'
     version: 1,
     storage,
   }
+
+  const rootReducer = combineReducers({
+    users:userReducer,
+    movies:moviesReducer
+  })
   
-  const persistedReducer = persistReducer(persistConfig, userReducer)
+  const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 export const store = configureStore({
     reducer:{
-        user:persistedReducer,
-        movies: moviesReducer
+        reducer:persistedReducer
     },
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

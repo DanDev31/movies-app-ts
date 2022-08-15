@@ -6,7 +6,7 @@ import styles from './landingPage.module.css'
 
 export const LandingPage:React.FC = () => {
 
-  const { isLogged } = useAppSelector(state => state.user)
+  const { isLogged } = useAppSelector(state => state.reducer.users)
   const navigation = useNavigate()
   const dispatch = useAppDispatch()
   

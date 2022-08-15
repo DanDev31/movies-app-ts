@@ -38,13 +38,15 @@ interface MoviesSlice {
     copyMovies:Movies[];
     loading:boolean;
     error:string;
+    type:string;
 }
 
 const initialState:MoviesSlice = {
     movies:[],
     copyMovies:[],
     loading:false,
-    error:''
+    error:'',
+    type:''
 }
 
 const moviesSlice = createSlice({
@@ -56,6 +58,10 @@ const moviesSlice = createSlice({
         },
         findMovies(state, { payload }){
             state.movies = state.copyMovies.filter(movie => movie.title.toLowerCase().includes(payload.toLowerCase()))
+          }
+          ,
+        setType(state, { payload }){
+            state.type = payload
           }
     },
     // extraReducers: (builder) => {
@@ -74,5 +80,5 @@ const moviesSlice = createSlice({
     // }
 })
 
-export const { loadMovies, findMovies } = moviesSlice.actions
+export const { loadMovies, findMovies, setType } = moviesSlice.actions
 export default moviesSlice.reducer

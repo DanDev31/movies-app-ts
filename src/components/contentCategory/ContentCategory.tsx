@@ -8,7 +8,7 @@ import styles from './contentCategory.module.css'
 export const ContentCategory:React.FC = () => {
 
   const {category} = useParams()
-  const { movies } = useAppSelector(state => state.movies)
+  const { movies } = useAppSelector(state => state.reducer.movies)
 
   return (
     <div className='container__styles'>
