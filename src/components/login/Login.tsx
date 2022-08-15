@@ -3,12 +3,11 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../redux/redux-hooks/hooks';
-import { allowAccess } from '../../redux/userReducer';
+import { allowAccess, handleModal } from '../../redux/userReducer';
 
 type Props = {
   switchForm:boolean;
   setSwitchForm:React.Dispatch<React.SetStateAction<boolean>>;
-  setIsModalOpen:React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface Login {
@@ -16,7 +15,7 @@ interface Login {
   password:string;
 }
 
-export const Login = ({switchForm, setSwitchForm, setIsModalOpen}:Props) => {
+export const Login = ({switchForm, setSwitchForm}:Props) => {
 
   const [userLogin, setUserLogin] = useState<Login>({
     email:"",
@@ -38,7 +37,7 @@ export const Login = ({switchForm, setSwitchForm, setIsModalOpen}:Props) => {
       const { user } = await signInWithEmailAndPassword(auth, email, password)
       dispatch(allowAccess(user.displayName))
       navigate("/home")
-      setIsModalOpen(false)
+      dispatch(handleModal())
     } catch (error) {
       console.log(error)
       setLoginError(true)

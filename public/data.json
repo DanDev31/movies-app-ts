@@ -1,0 +1,94 @@
+[
+    
+    {
+        "id":1,
+        "img":"https://lumiere-a.akamaihd.net/v1/images/image_1e5c5703.jpeg?region=0%2C0%2C540%2C810",
+        "trailer":"https://www.youtube.com/embed/znk2OICHbjY",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"The Avengers: Endgame",
+        "category":"action",
+        "year":"2019",
+        "type":"movie"
+    },
+    {
+        "id":2,
+        "img":"https://m.media-amazon.com/images/I/61id7dm4b6L._AC_SL1001_.jpg",
+        "trailer":"https://www.youtube.com/embed/lwSysg9o7wE",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Terminator 2",
+        "category":"sci-fi",
+        "year":"1991",
+        "type":"movie"
+    },
+    {
+        "id":3,
+        "img":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/21CE7EA0C1F3DB227B60C83F57CCF2699860BB3F346B1B53C859E07FD5829BA9/scale?width=1200&aspectRatio=1.78&format=jpeg",
+        "trailer":"https://www.youtube.com/embed/CGbgaHoapFM",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Monsters Inc",
+        "category":"animation",
+        "year":"2001",
+        "type":"movie"
+    },
+    {
+        "id":4,
+        "img":"https://m.media-amazon.com/images/I/91XKS5MN9uL._AC_SY741_.jpg",
+        "trailer":"https://www.youtube.com/embed/M7XM597XO94",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"John Wick 3 - Parabellum",
+        "category":"action",
+        "year":"2019",
+        "type":"movie"
+    },
+    {
+        "id":5,
+        "img":"https://play-lh.googleusercontent.com/BKK63bcAzhBOcST8rqKuhAjNt4QPTBKN5bNLvlw5_GjPJrT6PEY3NeVRJDMwzMI56vat",
+        "trailer":"https://www.youtube.com/embed/tcdUhdOlz9M",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Hangover",
+        "category":"comedy",
+        "year":"2009",
+        "type":"movie"
+    },
+    {
+
+        "id":6,
+        "img":"https://imagenes.atresplayer.com/atp/clipping/cmsimages01/2021/09/30/D4E89173-B12C-4CAD-B81F-9984EF64CCAE//480x270.jpg",
+        "trailer":"https://www.youtube.com/embed/WBb3fojgW0Q",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"The Big Bang Theory",
+        "category":"comedy",
+        "year":"2007",
+        "type":"serie"
+    },
+    {
+        "id":7,
+        "img":"https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8d8f28105415493.619ded067937d.jpg",
+        "trailer":"https://www.youtube.com/embed/zSWdZVtXT7E",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Interstellar",
+        "category":"sci-fi",
+        "year":"2014",
+        "type":"movie"
+    },
+    {
+        "id":8,
+        "img":"https://m.media-amazon.com/images/I/71eo2tqEdKL._AC_SY679_.jpg",
+        "trailer":"https://www.youtube.com/embed/xIBiJ_SzJTA",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Mr.Robot",
+        "category":"drama",
+        "year":"2015",
+        "type":"serie"
+    },
+    {
+        "id":9,
+        "img":"https://i.pinimg.com/originals/0f/51/c1/0f51c158fac6be841466e8275089c6f4.jpg",
+        "trailer":"https://www.youtube.com/embed/ByXuk9QqQkk",
+        "sinopsis": "Vivamus egestas, turpis at eleifend rhoncus, enim odio auctor lacus, sit amet mollis risus nulla a justo. Suspendisse semper metus mauris, sit amet rutrum nibh laoreet in. Vestibulum quis lorem massa. Praesent scelerisque tellus ac nulla pulvinar, non eleifend quam dictum. Suspendisse sed cursus sem. Aliquam elit nisi, faucibus et quam quis, blandit eleifend mi. Nulla finibus vel massa faucibus posuere. Fusce et velit sed arcu congue finibus. Maecenas vel sodales mauris, nec auctor ante.",
+        "title":"Spirited away",
+        "category":"animation",
+        "year":"2003",
+        "type":"movie"
+    }
+]

@@ -3,13 +3,13 @@ import { useAppDispatch } from '../../redux/redux-hooks/hooks';
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 import { auth } from '../../firebase/firebase';
 import { useNavigate } from 'react-router-dom';
+import { allowAccess, handleModal } from '../../redux/userReducer';
 
 
 
 type Props = {
     switchForm:boolean;
     setSwitchForm:React.Dispatch<React.SetStateAction<boolean>>;
-    setIsModalOpen:React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface Register {
@@ -19,7 +19,7 @@ interface Register {
     password:string;
 }
 
-export const Register = ({switchForm, setSwitchForm, setIsModalOpen}:Props) => {
+export const Register = ({switchForm, setSwitchForm}:Props) => {
 
     const [userRegister, setUserRegister] = useState<Register>({
         name:"",
@@ -31,6 +31,7 @@ export const Register = ({switchForm, setSwitchForm, setIsModalOpen}:Props) => {
     const [passwordError, setPasswordError] = useState(true)
     const [registerError, setRegisterError] = useState(false)
     const navigate = useNavigate()
+    const dispatch = useAppDispatch()
     const { name, lastName, email, password } = userRegister
 
   
@@ -42,7 +43,8 @@ export const Register = ({switchForm, setSwitchForm, setIsModalOpen}:Props) => {
                 displayName:name
             })
             navigate("/home")
-            setIsModalOpen(false)
+            dispatch(handleModal())
+            dispatch(allowAccess(user.displayName))
             setSwitchForm(false)
         } catch (error) {
             console.log(error)

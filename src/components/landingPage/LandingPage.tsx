@@ -1,15 +1,20 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useAppSelector } from '../../redux/redux-hooks/hooks'
+import { useAppDispatch, useAppSelector } from '../../redux/redux-hooks/hooks'
+import { handleModal } from '../../redux/userReducer'
 import styles from './landingPage.module.css'
 
 export const LandingPage:React.FC = () => {
 
   const { isLogged } = useAppSelector(state => state.user)
   const navigation = useNavigate()
+  const dispatch = useAppDispatch()
+  
   const validateAccess = ():void => {
     if(isLogged){
       navigation("/home")
+    }else{
+      dispatch(handleModal())
     }
   }
 

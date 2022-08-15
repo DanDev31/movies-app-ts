@@ -4,11 +4,13 @@ import { createSlice } from "@reduxjs/toolkit";
 interface Authorization {
     user:string;
     isLogged:boolean;
+    isModalOpen:boolean;
 }
 
 const initialState:Authorization = {
     user:"",
-    isLogged:false
+    isLogged:false,
+    isModalOpen:false
 }
 
 const userSlice = createSlice({
@@ -22,9 +24,12 @@ const userSlice = createSlice({
         logout(state){
             state.user = "";
             state.isLogged = false;
+        },
+        handleModal(state){
+            state.isModalOpen = !state.isModalOpen;
         }
     }
 })
 
-export const { allowAccess, logout } = userSlice.actions
+export const { allowAccess, logout, handleModal } = userSlice.actions
 export default userSlice.reducer

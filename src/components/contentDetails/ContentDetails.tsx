@@ -1,7 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import movies from '../../data/data.json'
 import { ModalHandler } from '../../helpers/modalHandler'
+import { useAppDispatch, useAppSelector } from '../../redux/redux-hooks/hooks'
+import { handleModal } from '../../redux/userReducer'
 import { Modal } from '../modal/Modal'
 import styles from './contentDetails.module.css'
 
@@ -19,8 +20,10 @@ type Movie= {
 export const ContentDetails = () => {
 
 const {id} = useParams()
+const { movies } = useAppSelector(state => state.movies)
+const { isModalOpen } = useAppSelector(state => state.user)
 const movie: Movie | undefined = movies.find(item => item.id === Number(id))
-const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
+const dispatch = useAppDispatch()
 
   return (
     <div className="container__styles">
@@ -32,7 +35,7 @@ const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
                         <small>{movie?.year}</small>
                     </div>
                     <p>{movie?.sinopsis}</p>
-                    <button className={`btn ${styles.trailer__button}`} onClick={() => setIsModalOpen(true)}>Watch trailer</button>
+                    <button className={`btn ${styles.trailer__button}`} onClick={() => dispatch(handleModal())}>Watch trailer</button>
                 </div>
                 <div className={styles.movie__poster}>
                     <img src={movie?.img} alt="" />
@@ -41,7 +44,6 @@ const {isModalOpen, setIsModalOpen, toggleModal} = ModalHandler()
 
             <Modal
                 isOpen={isModalOpen}
-                handleClose={toggleModal}
             >
                  <div className={styles.movie__video}>
                     <iframe 
