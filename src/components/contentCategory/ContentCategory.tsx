@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useAppSelector } from '../../redux/redux-hooks/hooks'
 import { ContentCard } from '../contentCard/ContentCard'
-import { SearchBar } from '../searchBar/SearchBar'
 import styles from './contentCategory.module.css'
 
 export const ContentCategory:React.FC = () => {
@@ -15,7 +14,6 @@ export const ContentCategory:React.FC = () => {
       <div className='fluid__container'>
 
         <h2 className={styles.category__title}>Category : <span>{category}</span></h2>
-        {/* <SearchBar /> */}
 
         <div className={styles.movies__container}>
           {

@@ -1,0 +1,13 @@
+.films__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+@media (max-width:800px){
+    .films__container{
+        justify-content: center;
+    }
+}
+

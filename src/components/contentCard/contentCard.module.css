@@ -1,6 +1,6 @@
 .card__img__container{
     border-radius: 1rem;
-    width: 40rem;
+    max-width: 40rem;
     height: 50rem;
     transition: .2s all ease-in-out;
     overflow: hidden;

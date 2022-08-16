@@ -1,8 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from 'react'
-import { FaSearch } from 'react-icons/fa'
-import { useNavigate } from 'react-router-dom'
-import { findMovies } from '../../redux/moviesReducer'
-import { useAppDispatch } from '../../redux/redux-hooks/hooks'
+import React, { ChangeEvent } from 'react'
 import styles from './searchBar.module.css'
 
 interface Props {
@@ -25,7 +21,6 @@ export const SearchBar = ({inputValue, setInputValue}:Props) => {
             className={styles.search__input} 
             onChange={handleChange}
             placeholder="Type to Search..."/>
-            <button className={styles.btn__search}><FaSearch className={styles.search__icon}/></button>
         </form>
     
   )

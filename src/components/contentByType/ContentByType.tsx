@@ -15,7 +15,7 @@ export const ContentByType = () => {
   return (
     <div className="container__styles">
         <div className="fluid__container">
-            <h2>{type}</h2>
+            <h3>{type}</h3>
             <SearchBar inputValue={ inputValue }  setInputValue={ setInputValue }/>
             {
                 searchedFilms.length !== 0 ? (

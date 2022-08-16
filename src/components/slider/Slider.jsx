@@ -19,7 +19,22 @@ export const Slider = () => {
             <img src="https://i.pinimg.com/originals/91/bf/1a/91bf1a886e7256acc11cc6103b791a3f.png" />
         </div>
         <div className='slider__img'>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRA-GMc1SW2NsTuankA2hCIWt9TtkyDklAmtsj7tVzL9iHoBvCQM6BnaBgx_Uf_8_TNB4&usqp=CAU" />
+            <img src="https://es.web.img3.acsta.net/pictures/22/01/10/10/56/3025068.jpg" />
+        </div>
+        <div className='slider__img'>
+            <img src="https://f.rpp-noticias.io/2021/07/15/1120351red-de-disney-y-pixarjpg.jpg" />
+        </div>
+        <div className='slider__img'>
+            <img src="https://pbs.twimg.com/media/FVnqjp1WQAAUIKg.jpg" />
+        </div>
+        <div className='slider__img'>
+            <img src="https://cinembrollos.files.wordpress.com/2022/05/cha_cha_real_smooth.jpg" />
+        </div>
+        <div className='slider__img'>
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2022/04/nuevos-posteres-oficiales-doctor-strange-multiverso-locura-2667437.jpg?itok=4GGVNZt2" />
+        </div>
+        <div className='slider__img'>
+            <img src="https://i0.wp.com/www.thegoodviewer.com/wp-content/uploads/2022/06/Hustle_Poster.jpg?fit=933%2C1383&ssl=1" />
         </div>
         
     </Carousel>

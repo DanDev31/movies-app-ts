@@ -1,26 +1,5 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import moviesCollection from '../data/data.json'
-import axios from "axios";
-
-
-// export const fetchMovies = createAsyncThunk('movies/fetchMovies', 
-//     async() => {
-
-//         try {
-//            const response = await axios.get('data.json',{
-//                 headers : { 
-//                     'Content-Type': 'application/json',
-//                     'Accept': 'application/json'
-//                 }
-//            }
-//            )
-//            console.log("me ejecuto")
-//            return response.data
-//         } catch (error) {
-//             console.log("error")
-//             console.error(error)
-//         }
-// })
 
 interface Movies {
   id:number

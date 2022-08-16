@@ -1,14 +1,19 @@
 .movie__detail{
     /* align-items: center; */
     display: flex;
+    gap: 2rem;
     margin-top: 10rem;
+    padding-bottom: 5rem;
 }
 
 .movie__text{
-    text-align: justify;
     letter-spacing: .3px;
     line-height: 1.8;
     flex: 3;
+}
+
+.movie__text p{
+    text-align: justify;
 }
 
 .movie__title{
@@ -47,18 +52,23 @@
 }
 
 .movie__video{
-   /* min-width: 28rem; */
+    margin: 1rem;
 }
 
 .video_container{
-    min-width: 40rem;
+    border-radius:.5rem;
+    width: 45rem;
     height: 40rem;
+
 }
 
 @media (max-width:800px){
     .movie__detail{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 5rem;
+    }
+    .video_container{
+        width: 100%;
     }
     .trailer__button{
         width: 100%;

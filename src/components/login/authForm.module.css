@@ -27,6 +27,7 @@
 .form__input input{
     border: 2px solid lightgray;
     border-radius: .3rem;
+    font-size: 1.6rem;
     padding: 1rem;
     display: block;
     width: 100%;
@@ -51,6 +52,6 @@
 }
 
 .form__validation__text li {
-    list-style: disc;
+    list-style:none;
     line-height: 1.5;
 }
